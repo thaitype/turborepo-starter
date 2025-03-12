@@ -1,0 +1,21 @@
+{
+  "name": "starter",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "tsx ./src/main.ts",
+    "build": "next build",
+    "start": "next start",
+    "lint": "tsc --noEmit && eslint ./src",
+    "lint:fix": "eslint --fix ./src && prettier -w src"
+  },
+  "dependencies": {
+    "@repo/shared": "workspace:*"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "vitest": "^3.0.8"
+  }
+}
