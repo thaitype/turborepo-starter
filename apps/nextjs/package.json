@@ -11,8 +11,8 @@
     "test:watch": "vitest watch",
     "lint:check": "next lint --max-warnings 0",
     "lint:fix": "next lint --fix",
-    "format:check": "prettier -c .",
-    "format:fix": "prettier --write .",
+    "format:check": "prettier -c ./**/*.{ts,tsx}",
+    "format:fix": "prettier --write ./**/*.{ts,tsx}",
     "check-types": "tsc --noEmit"
   },
   "dependencies": {
