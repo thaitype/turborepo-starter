@@ -1,5 +1,7 @@
 # 🚀 Turborepo Starter
 
+[![Test and Build](https://github.com/thaitype/turborepo-starter/actions/workflows/test-and-build.yml/badge.svg)](https://github.com/thaitype/turborepo-starter/actions/workflows/test-and-build.yml)
+
 A modern **Turborepo** starter template designed for scalability, maintainability, and modularity.
 
 ## 📖 Philosophy
