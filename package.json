@@ -1,5 +1,5 @@
 {
-  "name": "@repo/root",
+  "name": "@acme/root",
   "private": true,
   "scripts": {
     "build": "turbo run build",

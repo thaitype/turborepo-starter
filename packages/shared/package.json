@@ -1,5 +1,5 @@
 {
-  "name": "@repo/shared",
+  "name": "@acme/shared",
   "version": "0.0.1",
   "type": "module",
   "exports": {
@@ -12,9 +12,9 @@
   },
   "devDependencies": {
     "@vitest/coverage-istanbul": "^3.0.8",
-    "@repo/eslint-config": "workspace:*",
-    "@repo/typescript-config": "workspace:*",
-    "@repo/vitest-config": "workspace:*",
+    "@acme/eslint-config": "workspace:*",
+    "@acme/typescript-config": "workspace:*",
+    "@acme/vitest-config": "workspace:*",
     "vitest": "^3.0.8"
   }
 }

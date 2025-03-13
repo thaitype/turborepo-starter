@@ -8,7 +8,7 @@
       "outputs": [".next/**", "!.next/cache/**", "dist"]
     },
     "test": {
-      "dependsOn": ["@repo/vitest-config#build", "^test"]
+      "dependsOn": ["@acme/vitest-config#build", "^test"]
     },
     "test:watch": {
       "cache": false,

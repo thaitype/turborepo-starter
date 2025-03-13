@@ -23,14 +23,14 @@ importers:
 
   apps/cli:
     dependencies:
-      '@repo/shared':
+      '@acme/shared':
         specifier: workspace:*
         version: link:../../packages/shared
     devDependencies:
-      '@repo/eslint-config':
+      '@acme/eslint-config':
         specifier: workspace:*
         version: link:../../packages/eslint-config
-      '@repo/typescript-config':
+      '@acme/typescript-config':
         specifier: workspace:*
         version: link:../../packages/typescript-config
       esbuild:
@@ -42,7 +42,7 @@ importers:
 
   apps/nextjs:
     dependencies:
-      '@repo/ui':
+      '@acme/ui':
         specifier: workspace:*
         version: link:../../packages/ui
       next:
@@ -55,10 +55,10 @@ importers:
         specifier: ^19.0.0
         version: 19.0.0(react@19.0.0)
     devDependencies:
-      '@repo/eslint-config':
+      '@acme/eslint-config':
         specifier: workspace:*
         version: link:../../packages/eslint-config
-      '@repo/typescript-config':
+      '@acme/typescript-config':
         specifier: workspace:*
         version: link:../../packages/typescript-config
       '@types/node':
@@ -115,13 +115,13 @@ importers:
 
   packages/shared:
     devDependencies:
-      '@repo/eslint-config':
+      '@acme/eslint-config':
         specifier: workspace:*
         version: link:../eslint-config
-      '@repo/typescript-config':
+      '@acme/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
-      '@repo/vitest-config':
+      '@acme/vitest-config':
         specifier: workspace:*
         version: link:../vitest-config
       '@vitest/coverage-istanbul':
@@ -142,10 +142,10 @@ importers:
         specifier: ^19.0.0
         version: 19.0.0(react@19.0.0)
     devDependencies:
-      '@repo/eslint-config':
+      '@acme/eslint-config':
         specifier: workspace:*
         version: link:../eslint-config
-      '@repo/typescript-config':
+      '@acme/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
       '@turbo/gen':
@@ -169,7 +169,7 @@ importers:
 
   packages/vitest-config:
     devDependencies:
-      '@repo/typescript-config':
+      '@acme/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
       '@vitest/coverage-istanbul':
