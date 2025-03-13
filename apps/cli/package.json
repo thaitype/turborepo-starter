@@ -21,8 +21,9 @@
   "devDependencies": {
     "@acme/eslint-config": "workspace:*",
     "@acme/typescript-config": "workspace:*",
-    "esbuild": "^0.25.1",
     "@types/node": "^22.13.9",
+    "esbuild": "^0.25.1",
+    "eslint": "^9.22.0",
     "prettier": "^3.5.3",
     "vitest": "^3.0.8"
   }
