@@ -21,11 +21,14 @@ This **Turborepo** setup includes the following **apps and packages**:
 - **`nextjs`** - A [Next.js](https://nextjs.org/) application for frontend.
 - **`cli`** - A command-line tool for automation.
 
-### **🔧 Shared Packages**
+### **🔧 Packages**
 - **`@acme/ui`** - A shared React component library for reuse across apps.
+- **`@acme/shared`** - A shared utility package for common functions.
+
+### **⚙️ Configs**
 - **`@acme/eslint-config`** - A centralized ESLint configuration (`eslint-config-next`, `eslint-config-prettier`).
 - **`@acme/typescript-config`** - Shared TypeScript configuration (`tsconfig.json`) for consistency.
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+- **`@acme/vitest-config`** - Shared Vitest configuration for testing.
 
 ### Utilities
 
