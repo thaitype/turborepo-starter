@@ -22,6 +22,8 @@
     "@acme/eslint-config": "workspace:*",
     "@acme/typescript-config": "workspace:*",
     "esbuild": "^0.25.1",
+    "@types/node": "^22.13.9",
+    "prettier": "^3.5.3",
     "vitest": "^3.0.8"
   }
 }

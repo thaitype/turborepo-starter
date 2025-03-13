@@ -1,27 +1,30 @@
-# Turborepo starter
+# 🚀 Turborepo Starter
 
-This Turborepo starter is maintained by the Turborepo core team.
+A modern **Turborepo** starter template designed for scalability, maintainability, and modularity.
 
-## Using this example
+## 📖 Philosophy
 
-Run the following command:
+- **Modern Tooling:** Utilizes cutting-edge tools and best practices.
+- **Modular Design:** Each project/package is **independent**, allowing easy removal of unnecessary dependencies.
+- **No Root-Level Dependencies:** Avoids installing packages in the root workspace to prevent monolithic growth, making maintenance easier, except for `turbo` and `typescript`.
+- **Consistent Configuration:** Shared configurations for ESLint, Prettier, and TypeScript to ensure consistency across all projects.
+- **TypeScript Everywhere:** All projects/packages are written in TypeScript for static type checking and improved developer experience.
+- **Automated Workflows:** Includes scripts for building, testing, and linting all projects/packages at once.
+- **Shared Components:** A shared React component library for reuse across all projects/packages.
+- **Vite for Testing:** Uses Vite for fast and reliable testing.
 
-```sh
-npx create-turbo@latest
-```
+## 🏗️ What's Inside?
 
-## What's inside?
+This **Turborepo** setup includes the following **apps and packages**:
 
-This Turborepo includes the following packages/apps:
+### **📦 Apps**
+- **`nextjs`** - A [Next.js](https://nextjs.org/) application for frontend.
+- **`cli`** - A command-line tool for automation.
 
-### Apps and Packages
-
-- `nextjs`: a [Next.js](https://nextjs.org/) app
-- `cli`: a CLI app
-- `@acme/ui`: a stub React component library used by the `nextjs` app
-- `@acme/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@acme/typescript-config`: `tsconfig.json`s used throughout the monorepo
-
+### **🔧 Shared Packages**
+- **`@acme/ui`** - A shared React component library for reuse across apps.
+- **`@acme/eslint-config`** - A centralized ESLint configuration (`eslint-config-next`, `eslint-config-prettier`).
+- **`@acme/typescript-config`** - Shared TypeScript configuration (`tsconfig.json`) for consistency.
 Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
 
 ### Utilities
