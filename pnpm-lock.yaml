@@ -33,6 +33,9 @@ importers:
       '@repo/typescript-config':
         specifier: workspace:*
         version: link:../../packages/typescript-config
+      esbuild:
+        specifier: ^0.25.1
+        version: 0.25.1
       vitest:
         specifier: ^3.0.8
         version: 3.0.8(@types/node@22.13.9)(@vitest/ui@3.0.8)(jsdom@26.0.0)

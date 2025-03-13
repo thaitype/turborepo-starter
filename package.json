@@ -1,14 +1,14 @@
 {
-  "name": "demoturbo",
+  "name": "@repo/root",
   "private": true,
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
-    "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "lint": "turbo lint:check format:check check-types",
+    "lint:fix": "turbo lint:fix format:fix",
     "test": "turbo run test",
-    "test:coverage-report": "turbo run view-report",
-    "check-types": "turbo run check-types"
+    "test:watch": "turbo run test:watch",
+    "test:coverage-report": "turbo run view-report"
   },
   "devDependencies": {
     "@types/node": "^22.13.9",

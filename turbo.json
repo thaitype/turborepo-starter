@@ -5,7 +5,7 @@
     "build": {
       "dependsOn": ["^build"],
       "inputs": ["$TURBO_DEFAULT$", ".env*"],
-      "outputs": [".next/**", "!.next/cache/**"]
+      "outputs": [".next/**", "!.next/cache/**", "dist"]
     },
     "test": {
       "dependsOn": ["@repo/vitest-config#build", "^test"]
@@ -14,9 +14,14 @@
       "cache": false,
       "persistent": true
     },
-    "lint": {
-      "dependsOn": ["^lint"]
+    "lint:check": {
+      "dependsOn": ["^lint:check"]
     },
+    "lint:fix": {},
+    "format:check": {
+      "dependsOn": ["^format:check"]
+    },
+    "format:fix": {},
     "check-types": {
       "dependsOn": ["^check-types"]
     },
