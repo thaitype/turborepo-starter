@@ -15,7 +15,7 @@
       "persistent": true
     },
     "lint:check": {
-      "dependsOn": ["^lint:check"]
+      "dependsOn": ["@acme/vitest-config#build", "^lint:check"]
     },
     "lint:fix": {},
     "format:check": {
@@ -23,7 +23,7 @@
     },
     "format:fix": {},
     "check-types": {
-      "dependsOn": ["^check-types"]
+      "dependsOn": ["@acme/vitest-config#build", "^check-types"]
     },
     "dev": {
       "cache": false,
