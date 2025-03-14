@@ -4,9 +4,25 @@ on:
   push:
     branches:
       - main
+    paths-ignore: 
+      - 'README.md'
+      - 'CONTRIBUTING.md'
+      - 'CODE_OF_CONDUCT.md'
+      - 'LICENSE'
+      - 'CHANGELOG.md'
+      - 'docs/**'
+      - 'tools/**'
   pull_request:
     branches:
       - main
+    paths-ignore: 
+      - 'README.md'
+      - 'CONTRIBUTING.md'
+      - 'CODE_OF_CONDUCT.md'
+      - 'LICENSE'
+      - 'CHANGELOG.md'
+      - 'docs/**'
+      - 'tools/**'
 
 env:
   NODE_VERSION: 20.18.x

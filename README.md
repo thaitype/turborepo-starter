@@ -31,6 +31,7 @@ This **Turborepo** setup includes the following **apps and packages**:
 - **`@acme/eslint-config`** - A centralized ESLint configuration (`eslint-config-next`, `eslint-config-prettier`).
 - **`@acme/typescript-config`** - Shared TypeScript configuration (`tsconfig.json`) for consistency.
 - **`@acme/vitest-config`** - Shared Vitest configuration for testing.
+- **`@acme/prettier-config`** - Shared Prettier configuration for code formatting.
 
 ### Utilities
 

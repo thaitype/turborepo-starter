@@ -24,6 +24,9 @@ importers:
       '@acme/eslint-config':
         specifier: workspace:*
         version: link:../../configs/eslint-config
+      '@acme/prettier-config':
+        specifier: workspace:*
+        version: link:../../configs/prettier-config
       '@acme/typescript-config':
         specifier: workspace:*
         version: link:../../configs/typescript-config
@@ -50,7 +53,7 @@ importers:
         version: link:../../packages/ui
       next:
         specifier: ^15.2.1
-        version: 15.2.1(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+        version: 15.2.1(@babel/core@7.26.10)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       react:
         specifier: ^19.0.0
         version: 19.0.0
@@ -61,6 +64,9 @@ importers:
       '@acme/eslint-config':
         specifier: workspace:*
         version: link:../../configs/eslint-config
+      '@acme/prettier-config':
+        specifier: workspace:*
+        version: link:../../configs/prettier-config
       '@acme/typescript-config':
         specifier: workspace:*
         version: link:../../configs/typescript-config
@@ -122,6 +128,12 @@ importers:
         specifier: ^8.26.0
         version: 8.26.0(eslint@9.22.0)(typescript@5.8.2)
 
+  configs/prettier-config:
+    devDependencies:
+      prettier:
+        specifier: ^3.5.3
+        version: 3.5.3
+
   configs/typescript-config: {}
 
   configs/vitest-config:
@@ -153,6 +165,9 @@ importers:
       '@acme/eslint-config':
         specifier: workspace:*
         version: link:../../configs/eslint-config
+      '@acme/prettier-config':
+        specifier: workspace:*
+        version: link:../../configs/prettier-config
       '@acme/typescript-config':
         specifier: workspace:*
         version: link:../../configs/typescript-config
@@ -184,6 +199,9 @@ importers:
       '@acme/eslint-config':
         specifier: workspace:*
         version: link:../../configs/eslint-config
+      '@acme/prettier-config':
+        specifier: workspace:*
+        version: link:../../configs/prettier-config
       '@acme/typescript-config':
         specifier: workspace:*
         version: link:../../configs/typescript-config
@@ -5563,7 +5581,7 @@ snapshots:
 
   netmask@2.0.2: {}
 
-  next@15.2.1(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
+  next@15.2.1(@babel/core@7.26.10)(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
     dependencies:
       '@next/env': 15.2.1
       '@swc/counter': 0.1.3
@@ -5573,7 +5591,7 @@ snapshots:
       postcss: 8.4.31
       react: 19.0.0
       react-dom: 19.0.0(react@19.0.0)
-      styled-jsx: 5.1.6(react@19.0.0)
+      styled-jsx: 5.1.6(@babel/core@7.26.10)(react@19.0.0)
     optionalDependencies:
       '@next/swc-darwin-arm64': 15.2.1
       '@next/swc-darwin-x64': 15.2.1
@@ -6285,10 +6303,12 @@ snapshots:
 
   strip-json-comments@3.1.1: {}
 
-  styled-jsx@5.1.6(react@19.0.0):
+  styled-jsx@5.1.6(@babel/core@7.26.10)(react@19.0.0):
     dependencies:
       client-only: 0.0.1
       react: 19.0.0
+    optionalDependencies:
+      '@babel/core': 7.26.10
 
   supports-color@5.5.0:
     dependencies:
