@@ -4,18 +4,30 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
-    "lint": "turbo lint:check format:check check-types",
+    "lint:check": "turbo lint:check format:check check-types",
     "lint:fix": "turbo lint:fix format:fix",
+    "format:check": "prettier --check ./**/*.{ts,js}",
+    "format:fix": "prettier --write ./**/*.{ts,js}",
     "test": "turbo run test",
     "test:watch": "turbo run test:watch",
     "test:coverage-report": "turbo run view-report"
   },
   "devDependencies": {
+    "prettier": "^3.5.3",
     "turbo": "^2.4.4",
     "typescript": "5.8.2"
   },
   "packageManager": "pnpm@10.6.2",
   "engines": {
     "node": ">=18"
+  },
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 2,
+    "useTabs": false,
+    "semi": true,
+    "singleQuote": true,
+    "printWidth": 120,
+    "arrowParens": "avoid"
   }
 }
