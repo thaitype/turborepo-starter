@@ -12,15 +12,12 @@
     "test:watch": "vitest watch",
     "lint:check": "eslint . --max-warnings 0",
     "lint:fix": "eslint --fix ./src",
-    "format:check": "prettier -c src",
-    "format:fix": "prettier --write src",
     "check-types": "tsc --noEmit"
   },
   "devDependencies": {
     "@acme/eslint-config": "workspace:*",
     "@acme/typescript-config": "workspace:*",
     "@acme/vitest-config": "workspace:*",
-    "@acme/prettier-config": "workspace:*",
     "@testing-library/react": "^16.2.0",
     "@turbo/gen": "^2.4.4",
     "@types/node": "^22.13.9",

@@ -11,8 +11,6 @@
     "test:watch": "vitest watch",
     "lint:check": "next lint --max-warnings 0",
     "lint:fix": "next lint --fix",
-    "format:check": "prettier -c ./**/*.{ts,tsx} && prettier -c ./*.ts",
-    "format:fix": "prettier --write ./**/*.{ts,tsx} && prettier --write ./*.ts",
     "check-types": "tsc --noEmit"
   },
   "dependencies": {
@@ -25,7 +23,6 @@
     "@acme/eslint-config": "workspace:*",
     "@acme/typescript-config": "workspace:*",
     "@acme/vitest-config": "workspace:*",
-    "@acme/prettier-config": "workspace:*",
     "@types/node": "^22.13.9",
     "@types/react": "19.0.10",
     "@types/react-dom": "19.0.4",

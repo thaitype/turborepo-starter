@@ -11,8 +11,6 @@
     "test:watch": "vitest watch",
     "lint:check": "eslint ./src",
     "lint:fix": "eslint --fix ./src",
-    "format:check": "prettier -c src",
-    "format:fix": "prettier --write src",
     "check-types": "tsc --noEmit"
   },
   "dependencies": {
@@ -21,7 +19,6 @@
   "devDependencies": {
     "@acme/eslint-config": "workspace:*",
     "@acme/typescript-config": "workspace:*",
-    "@acme/prettier-config": "workspace:*",
     "@types/node": "^22.13.9",
     "esbuild": "^0.25.1",
     "eslint": "^9.22.0",

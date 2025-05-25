@@ -8,6 +8,9 @@ importers:
 
   .:
     devDependencies:
+      prettier:
+        specifier: ^3.5.3
+        version: 3.5.3
       turbo:
         specifier: ^2.4.4
         version: 2.4.4
@@ -24,9 +27,6 @@ importers:
       '@acme/eslint-config':
         specifier: workspace:*
         version: link:../../configs/eslint-config
-      '@acme/prettier-config':
-        specifier: workspace:*
-        version: link:../../configs/prettier-config
       '@acme/typescript-config':
         specifier: workspace:*
         version: link:../../configs/typescript-config
@@ -64,9 +64,6 @@ importers:
       '@acme/eslint-config':
         specifier: workspace:*
         version: link:../../configs/eslint-config
-      '@acme/prettier-config':
-        specifier: workspace:*
-        version: link:../../configs/prettier-config
       '@acme/typescript-config':
         specifier: workspace:*
         version: link:../../configs/typescript-config
@@ -128,12 +125,6 @@ importers:
         specifier: ^8.26.0
         version: 8.26.0(eslint@9.22.0)(typescript@5.8.2)
 
-  configs/prettier-config:
-    devDependencies:
-      prettier:
-        specifier: ^3.5.3
-        version: 3.5.3
-
   configs/typescript-config: {}
 
   configs/vitest-config:
@@ -165,9 +156,6 @@ importers:
       '@acme/eslint-config':
         specifier: workspace:*
         version: link:../../configs/eslint-config
-      '@acme/prettier-config':
-        specifier: workspace:*
-        version: link:../../configs/prettier-config
       '@acme/typescript-config':
         specifier: workspace:*
         version: link:../../configs/typescript-config
@@ -199,9 +187,6 @@ importers:
       '@acme/eslint-config':
         specifier: workspace:*
         version: link:../../configs/eslint-config
-      '@acme/prettier-config':
-        specifier: workspace:*
-        version: link:../../configs/prettier-config
       '@acme/typescript-config':
         specifier: workspace:*
         version: link:../../configs/typescript-config
